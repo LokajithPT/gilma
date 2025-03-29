@@ -1,7 +1,7 @@
 import os
 import requests
 
-SERVER_URL = "http://127.0.0.1:5000/upload"
+SERVER_URL = "http://100.104.132.24/upload"
 
 def send():
     current_folder = os.path.basename(os.getcwd())  # Get current folder name

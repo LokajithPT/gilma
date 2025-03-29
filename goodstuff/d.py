@@ -1,6 +1,6 @@
 import requests
 
-SERVER_URL = "http://127.0.0.1:5000"
+SERVER_URL = "http://100.104.132.24"
 
 def list_files():
     """Fetch and display files from the server."""

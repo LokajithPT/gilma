@@ -5,6 +5,7 @@ from termcolor import colored
 from goodstuff.send import send as s
 from goodstuff.recv import recv as r
 from goodstuff.d import d
+from goodstuff.d import list_files as list 
 def help():
     print(colored("This is a git alternative ","green"))
 
@@ -13,7 +14,8 @@ def help():
     print(colored("1.gilma vechuko ","green"))
     print(colored("2.gilma vangiko ","green"))
     print(colored("3.gilma sethupo ","green"))
-    
+    print(colored("4.gilma kaami ","green"))
+
 
     
 def main():
@@ -35,8 +37,12 @@ def main():
     elif arg == "sethupo":
         print(colored("deletion thingy ... ","green"))
         d()
-        print(colored("Well That Was QUICK","green"))
+        print(colored("indha vechuko ... ","green"))
 
+    elif arg == "kaami":
+        print(colored("listing files... ","green"))
+        list()
+        print(colored("Well That Was QUICK","green"))
 
 
     else:

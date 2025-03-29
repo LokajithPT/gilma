@@ -1,7 +1,7 @@
 import os
 import requests
 
-SERVER_URL = "http://127.0.0.1:5000"
+SERVER_URL = "http://100.104.132.24"
 
 def list_available_uploads():
     response = requests.get(f"{SERVER_URL}/list_uploads")
@@ -51,7 +51,16 @@ def recv():
     if not uploads:
         print("No uploads found.")
         exit()
-    
+
+    print(colored("before any thing " , "magenta"))
+    lol = input(colored(" give me ur pass:","magenta"))
+
+    if (lol == "lowkeychillin"):
+        print(colored("u got it ... " , "green"))
+
+    else:
+        print(colored("u gave me the wrong pass... " , "red"))
+        exit()
     print("Available uploads:")
     for idx, name in enumerate(uploads):
         print(f"{idx + 1}. {name}")
